@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Restaurante De Rut</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --amarillo: #CFAE25;
+            --amarillo-claro: #E2C23A;
+            --cafe-oscuro: #5B3A1E;
+            --crema: #F7F5F0;
+            --negro: #1B1B1B;
+            --blanco: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--crema);
+            color: var(--negro);
+        }
+
+        header {
+            background-color: var(--amarillo);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+        header img {
+            height: 55px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+            color: var(--negro);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--blanco);
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--cafe-oscuro);
+        }
+
+        .menu-section {
+            padding: 30px 20px;
+        }
+
+        .menu-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .menu-item {
+            background: var(--blanco);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .menu-item p {
+            margin: 0;
+            color: var(--cafe-oscuro);
+            font-size: 16px;
+        }
+
+        .whatsapp-btn {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .whatsapp-btn a {
+            background: #25D366;
+            color: white;
+            padding: 15px 25px;
+            font-size: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            background: var(--negro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logooriginal.png" alt="Logo Café de Rut">
+    <h1>Café Restaurante De Rut</h1>
+</header>
+
+<section class="hero">
+    <h2>Bolones, Tigrillo y Mucho Más</h2>
+    <p>Tu desayuno tradicional con sabor auténtico ecuatoriano.</p>
+</section>
+
+<section class="menu-section">
+    <h2>Menú Destacado</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="Bolonesvariedad1.png" alt="Bolón Variedad 1">
+            <h3>Bolón Clásico</h3>
+            <p>$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="bolonvaquero.png" alt="Bolón Vaquero">
+            <h3>Bolón Vaquero</h3>
+            <p>$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="bolodequeso.png" alt="Bolón de Queso">
+            <h3>Bolón de Queso</h3>
+            <p>$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="desayuno.png" alt="Desayuno Completo">
+            <h3>Desayuno Completo</h3>
+            <p>$3.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="Bolonesvariedad2.png" alt="Tigrillo">
+            <h3>Tigrillo</h3>
+            <p>$3.50</p>
+        </div>
+
+    </div>
+</section>
+
+<div class="whatsapp-btn">
+    <a href="https://wa.me/5930967137289" target="_blank">📲 Pedir por WhatsApp</a>
+</div>
+
+<footer>
+    © 2025 Café de Rut · Frente al Redondel de Cumandá
+</footer>
+
+</body>
+</html>
