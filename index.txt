@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Restaurante De Rut</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F7F5F0;
+        color: #1B1B1B;
+    }
+
+    :root {
+        --amarillo: #CFAE25;
+        --amarillo-claro: #E2C23A;
+        --cafe-oscuro: #5B3A1E;
+        --crema: #F7F5F0;
+        --negro: #1B1B1B;
+        --blanco: #FFFFFF;
+    }
+
+    .hero {
+        background-image: url('hero.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0,0,0,0.45);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px #000;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        background-color: var(--amarillo);
+        color: var(--negro);
+        border: none;
+        border-radius: 6px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .section h2 {
+        text-align: center;
+        color: var(--cafe-oscuro);
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .about {
+        font-size: 1.2rem;
+        line-height: 1.7;
+        text-align: center;
+        color: #333;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .menu-item {
+        background: var(--blanco);
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        text-align: center;
+    }
+
+    .menu-item img {
+        width: 100%;
+        border-radius: 10px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .menu-item h3 {
+        margin-top: 12px;
+        font-size: 1.4rem;
+        color: var(--cafe-oscuro);
+    }
+
+    .price {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: var(--amarillo);
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .contact-box {
+        background: var(--amarillo-claro);
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+        color: var(--negro);
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    footer {
+        background: var(--cafe-oscuro);
+        color: var(--blanco);
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Café Restaurante De Rut</h1>
+        <p>Bolones, tigrillo y desayunos tradicionales — ¡como deben ser!</p>
+        <a href="#menu" class="btn">Ver menú</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>Bienvenido</h2>
+    <p class="about">
+        En Café Restaurante De Rut preparamos los bolones y tigrillos más famosos de Cumandá.<br><br>
+        Somos un lugar familiar, con comida caliente, jugos frescos y precios accesibles.<br><br>
+        Estamos ubicados frente al redondel de Cumandá — ¡te esperamos todos los días!
+    </p>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section">
+    <h2>Menú Destacado</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="bolon-chimbo.jpg" alt="">
+            <h3>Chimbobolón</h3>
+            <p class="price">$3.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="tigrillo.jpg" alt="">
+            <h3>Tigrillo</h3>
+            <p class="price">$3.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="bolon-playero.jpg" alt="">
+            <h3>Bolón Playero</h3>
+            <p class="price">$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="super-queso.jpg" alt="">
+            <h3>Súper Queso</h3>
+            <p class="price">$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="bolon-vaquero.jpg" alt="">
+            <h3>Bolón Vaquero</h3>
+            <p class="price">$2.50</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="tigrillito.jpg" alt="">
+            <h3>Tigrillito</h3>
+            <p class="price">$2.75</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+    <h2>Galería</h2>
+
+    <div class="gallery">
+        <img src="gal1.jpg">
+        <img src="gal2.jpg">
+        <img src="gal3.jpg">
+        <img src="gal4.jpg">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+    <h2>Ubicación & Horario</h2>
+
+    <div class="contact-box">
+        📍 Frente al redondel de Cumandá, Chimborazo<br><br>
+        ⏰ Abierto: 7:00 AM – 3:00 PM<br><br>
+        📞 WhatsApp: (pronto disponible)
+    </div>
+
+    <br><br>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.9198703730377!2d-79.1335576!3d-2.2064832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d2bb1d9d603725%3A0xf13e245ed4577de6!2sCAFE%2F%20Restaurante%20DE%20RUT!5e0!3m2!1ses!2sec!4v1700000000000"
+        width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+    </iframe>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Café Restaurante De Rut — Bolones y mucho más
+</footer>
+
+</body>
+</html>
