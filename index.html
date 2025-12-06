@@ -126,19 +126,27 @@
             font-size: 16px;
         }
 
-        .whatsapp-btn {
-            text-align: center;
-            margin: 40px 0;
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25D366;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            z-index: 999;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-family: 'Montserrat', sans-serif;
         }
 
-        .whatsapp-btn a {
-            background: #25D366;
-            color: white;
-            padding: 15px 25px;
-            font-size: 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
+        .floating-whatsapp:hover {
+            transform: scale(1.06);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.35);
         }
 
         footer {
@@ -202,9 +210,12 @@
     </div>
 </section>
 
-<div class="whatsapp-btn">
-    <a href="https://wa.me/5930967137289" target="_blank">📲 Pedir por WhatsApp</a>
-</div>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/5930967137289?text=Hola!%20Quisiera%20hacer%20un%20pedido."
+   class="floating-whatsapp"
+   target="_blank">
+    🟢 Ordenar Ahora
+</a>
 
 <footer>
     © 2025 Café de Rut · Frente al Redondel de Cumandá
